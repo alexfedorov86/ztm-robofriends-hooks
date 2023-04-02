@@ -12,7 +12,8 @@ The basic version (using classes) on github: [ztm-robofriends](https://github.co
 
 ### Create new repository
 
-1. Clone base application  
+**Clone base application**
+
 `git clone https://github.com/alexfedorov86/ztm-robofriends ztm-robofriends-hooks`  
 Clone initial repository to new local folder
 
@@ -27,7 +28,7 @@ To update libraries and fix any issues
 
 `npm start` Check if all works  
 
-2. Create new app on github, link local project to it and push
+**Create new app on github, link local project to it and push**
 
 On github new app "ztm-robofriends-hooks" created.
 
@@ -37,3 +38,16 @@ existing "origin" remote URL updated
 `git add`  
 `git commit -m "project copied and ready to be modified"`  
 `git push`
+
+### Refactore a component (class -> functional) using hooks
+
+We have only 2 class components:  
+App.js  
+ErrorBoundry.js  
+
+We will leave second component as a class component, because it uses `componentDidCatch(error, info) {...}` and there is no simple way to simplify code using hooks.  
+
+And App.js is easily refactored with basic hooks `useState` and `useEffect`
+
+// app compiled successfully, works as intended, commited and pushed to github.
+
