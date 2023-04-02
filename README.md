@@ -12,6 +12,7 @@ The basic version (using classes) on github: [ztm-robofriends](https://github.co
 
 ### Create new repository
 
+1. Clone base application  
 `git clone https://github.com/alexfedorov86/ztm-robofriends ztm-robofriends-hooks`  
 Clone initial repository to new local folder
 
@@ -24,5 +25,15 @@ Install all dependencies
 `npm audit fix`  
 To update libraries and fix any issues
 
-`npm start` Check if all works
+`npm start` Check if all works  
 
+2. Create new app on github, link local project to it and push
+
+On github new app "ztm-robofriends-hooks" created.
+
+`git remote set-url origin https://github.com/alexfedorov86/ztm-robofriends-hooks.git`  
+existing "origin" remote URL updated
+
+`git add`  
+`git commit -m "project copied and ready to be modified"`  
+`git push`
